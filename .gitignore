@@ -9,8 +9,8 @@ Free Trial-4-22-2015-credentials.publishsettings
 Icon
 
 
-
-node_modules/
+# Ignore node_modules folder
+node_modules
 
 # Floobits
 .floo
