@@ -11,12 +11,8 @@ Icon
 # Ignore node_modules folder
 node_modules
 
-# Ignore full js files
-public/client
-public/lib
-
-# Ignore concat files
-*.concat.*
+# Ignore dist folder
+/public/dist
 
 # Floobits
 .floo

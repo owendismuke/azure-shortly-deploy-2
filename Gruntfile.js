@@ -63,6 +63,14 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      options: {
+        report: 'min'
+      },
+      target: {
+        files: {
+          'public/dist/app.min.css': ['public/*.css']
+        }
+      }
     },
 
     watch: {
@@ -121,7 +129,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'concat',
     'uglify',
-    //'cssmin'
+    'cssmin'
   ]);
 
   grunt.registerTask('upload', function(n) {
