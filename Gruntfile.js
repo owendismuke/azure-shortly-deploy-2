@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     mochaTest: {
       test: {
         options: {
-          reporter: 'spec'
+          reporter: 'nyan'
         },
         src: ['test/**/*.js']
       }
@@ -49,9 +49,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: [
-        // Add filespec list here
-      ],
+      files: ['public/client/**/*.js'],
       options: {
         force: 'true',
         jshintrc: '.jshintrc',
@@ -141,7 +139,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy', [
-    // add your deploy tasks here
+    'jshint',
+    'build',
+    'test',
+    'upload'
   ]);
 
 
