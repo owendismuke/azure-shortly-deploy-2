@@ -31,4 +31,5 @@ User.prototype.comparePassword = function(attemptedPassword, callback) {
   });
 };
 
+User = Promise.promisifyAll(User);
 module.exports = User;
