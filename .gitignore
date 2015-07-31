@@ -10,6 +10,7 @@ Icon
 
 # Ignore node_modules folder
 node_modules
+db
 
 # Ignore dist folder
 /public/dist
